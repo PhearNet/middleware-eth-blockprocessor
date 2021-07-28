@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "amqplib": "^0.5.1",
+    "amqplib": "^0.8.0",
     "bluebird": "^3.5.0",
     "bunyan": "^1.8.10",
     "dotenv": "^4.0.0",
