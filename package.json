@@ -15,13 +15,16 @@
     "mongoose": "^4.11.11",
     "require-all": "^2.2.0",
     "semaphore": "^1.1.0",
-    "uniqid": "^4.1.1",
-    "web3": "^1.0.0-beta.36"
+    "uniqid": "^5.0.0",
+    "web3": "^1.0.0-beta.36",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "lint": "node ./node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .js --fix --ignore-path .eslintignore .",
     "test": "node ./node_modules/mocha/bin/mocha -t 600000 -gc tests",
-    "testrpc": "node ./ipcConverter.js"
+    "testrpc": "node ./ipcConverter.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "chronobank",
   "license": "AGPL-3.0",
@@ -34,5 +37,6 @@
     "fs-extra": "^7.0.0",
     "ganache-cli": "^6.1.0",
     "mocha": "^3.5.0"
-  }
+  },
+  "snyk": true
 }
