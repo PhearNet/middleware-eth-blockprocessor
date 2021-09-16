@@ -4,7 +4,7 @@
   "main": "index.js",
   "requirements": {},
   "dependencies": {
-    "amqplib": "^0.5.1",
+    "amqplib": "^0.8.0",
     "bignumber.js": "^7.2.1",
     "bluebird": "^3.5.0",
     "bunyan": "^1.8.10",
